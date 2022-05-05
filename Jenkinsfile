@@ -10,7 +10,7 @@ pipeline {
         stage('run k6 test') {
             steps {
                 echo 'Running K6 performance tests...'
-                sh 'k6 run loadtests/performance-test.js'
+                sh 'k6 run script.js'
             }
         }
     }
